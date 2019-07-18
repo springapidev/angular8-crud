@@ -1,0 +1,21 @@
+<div class="container">
+  <h2>Employee Details</h2> 
+
+<hr/>
+<div *ngIf="category">
+  <div>
+    <label><b>ID: </b></label> {{category.id}}
+  </div>
+  <div>
+    <label><b>Name: </b></label> {{category.name}}
+  </div>
+  <div>
+    <label><b>Noted: </b></label> {{category.note}}
+  </div>  
+</div>
+
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary">Back to Employee List</button><br>
+
+</div>

@@ -1,0 +1,39 @@
+<div class="container">
+        <h1>Rest APi , Angular 8, Material Nav, Mat Icon, Bootstrap 4 Table</h1>
+        <hr/>
+        <h1>Category List</h1>
+        <hr>
+        <a routerLink="/add"> Add new category</a>
+  <br>
+        <table class="table table-dark table-striped">
+                <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Note</th>
+                <th>Action</th>
+            </tr>
+            </thead>
+            <tbody>
+                    <tr *ngFor="let cat of categories | async">
+                            <td>{{cat.id}}</td>
+                            <td>{{cat.name}}</td> 
+                            <td>{{cat.note}}</td>
+                            <td><button (click)="deleteCat(cat.id)" class="btn btn-danger">
+                                <mat-icon>delete</mat-icon>
+                            </button>
+                            <button (click)="categoryDetails(cat.id)" class="btn btn-info" style="margin-left: 10px"> <mat-icon>visibility</mat-icon></button>
+                            <button (click)="categoryEdit(cat.id)" class="btn btn-info" style="margin-left: 10px"> <mat-icon>edit</mat-icon></button></td>
+                        </tr>
+            </tbody>
+           <tfoot>
+                <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Note</th>
+                        <th>Action</th>
+                    </tr>  
+           </tfoot>
+        </table>
+        
+</div> 

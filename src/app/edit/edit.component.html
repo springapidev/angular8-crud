@@ -1,0 +1,31 @@
+<div class="container">
+  <h3>Create Employee</h3>
+  <div [hidden]="submitted" style="width: 400px;" *ngIf="category">
+    <form (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="catid">Cat ID</label>
+        <input type="text" class="form-control" id="catid" required [(ngModel)]="category.id" name="id">
+      </div>
+
+      <div class="form-group">
+        <label for="name">Cat Name</label>
+        <input type="text" class="form-control" id="name" required [(ngModel)]="category.name" name="name">
+      </div>
+
+      <div class="form-group">
+        <label for="name">Note</label>
+        <input type="text" class="form-control" id="note" required [(ngModel)]="category.note" name="note">
+      </div>
+
+      <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+  </div>
+
+  <div [hidden]="!submitted">
+    <h4>You submitted successfully!</h4>
+  </div>
+
+  <br>
+<br>
+<a routerLink="/">Go Home</a>
+</div>

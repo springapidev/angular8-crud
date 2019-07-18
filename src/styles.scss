@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import url('//maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
+@import url('//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js');
+@import url('//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js');
+@import url('//maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js');
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
